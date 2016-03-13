@@ -13,3 +13,5 @@
 const Route = use('Route')
 
 Route.get('/', 'HomeController.index')
+
+Route.post(':server/:summoner', 'SummonersController.getByName')
