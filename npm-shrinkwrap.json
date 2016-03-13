@@ -5730,6 +5730,11 @@
       "from": "vue@latest",
       "resolved": "https://registry.npmjs.org/vue/-/vue-1.0.17.tgz"
     },
+    "vue-resource": {
+      "version": "0.7.0",
+      "from": "vue-resource@latest",
+      "resolved": "https://registry.npmjs.org/vue-resource/-/vue-resource-0.7.0.tgz"
+    },
     "watchify": {
       "version": "3.7.0",
       "from": "watchify@>=3.2.3 <4.0.0",

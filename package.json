@@ -16,7 +16,8 @@
     "adonis-lucid": "^2.0.5",
     "adonis-middleware": "^1.0.5",
     "ouch": "^0.2.0-beta",
-    "vue": "^1.0.17"
+    "vue": "^1.0.17",
+    "vue-resource": "^0.7.0"
   },
   "autoload": {
     "App": "./app"
