@@ -1,11 +1,11 @@
 'use strict';
 
-const LolApi = require('leagueapi');
+const lol = require('leagueapi');
 
 const Env = use('Env');
 
 
-LolApi.init(Env.get('API_KEY'), 'br');
+lol.init(Env.get('API_KEY'), 'br');
 
 
 class SummonersController {
@@ -13,10 +13,18 @@ class SummonersController {
     *getByName (request, response) {
     	const summoner = request.param('summoner')
 
+    	const getGame = (id, region) => {
+    		lol.getCurrentGame(id, region, (err, game) => {
+    			console.log(game)
+    		});
+    	}
 
-   	 LolApi.Summoner.getByName(summoner, (err, summoner) => {
+
+   	 lol.Summoner.getByName(summoner, (err, response) => {
    	 	if(!err) {
-   	 		return response.json(summoner)
+   	 		let summ = response[summoner]
+   	 		console.log(summ)
+   	 		return getGame(summ.id, 'br')
    	 	}
    	 })
 
