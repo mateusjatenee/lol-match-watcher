@@ -11677,15 +11677,15 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":27,"vue-hot-reload-api":2,"vueify-insert-css":28}],31:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("\n\n")
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<p>Teste</p>\n"
+var __vueify_style__ = require("vueify-insert-css").insert(".__banner {\n  background: #744d82;\n  background: -moz-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -webkit-gradient(radial, top center, 0, center center, 100%, color-stop(11%, #744d82), color-stop(99%, #503d67), color-stop(100%, #503d67));\n  background: -webkit-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -o-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -ms-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -webkit-radial-gradient(top ellipse, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: radial-gradient(ellipse at top, #744d82 11%, #503d67 99%, #503d67 100%);\n  height: 100vh;\n}\n.__banner .__hero {\n  padding: 22rem 0;\n}\n.__banner .__hero .hero-header {\n  font-size: 50px;\n  color: #fff;\n}\n")
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"__banner\">\n\t<div class=\"container __hero\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"one column\">\n\t\t\t\t<h1 class=\"hero-header\">Whatever</h1>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   var id = "/Users/mateus1/Dropbox/github/lolinfo/resources/assets/js/components/home/index.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["\n\n"] = false
+    require("vueify-insert-css").cache[".__banner {\n  background: #744d82;\n  background: -moz-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -webkit-gradient(radial, top center, 0, center center, 100%, color-stop(11%, #744d82), color-stop(99%, #503d67), color-stop(100%, #503d67));\n  background: -webkit-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -o-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -ms-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: -webkit-radial-gradient(top ellipse, #744d82 11%, #503d67 99%, #503d67 100%);\n  background: radial-gradient(ellipse at top, #744d82 11%, #503d67 99%, #503d67 100%);\n  height: 100vh;\n}\n.__banner .__hero {\n  padding: 22rem 0;\n}\n.__banner .__hero .hero-header {\n  font-size: 50px;\n  color: #fff;\n}\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
